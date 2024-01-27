@@ -1,12 +1,18 @@
 using System;
+using StarterAssets;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class InteractScript : MonoBehaviour
 {
     private int objectsToCollect = 4;
-    private int collectedItems = 0;
-    
+    public int collectedItems = 0;
+    private CharacterController _thirdPersonController;
+
+    private void Start()
+    {
+        _thirdPersonController = GetComponent<CharacterController>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -38,6 +44,18 @@ public class InteractScript : MonoBehaviour
                 Destroy(other.gameObject);
                 CheckIfWin();
                 break;
+        }
+    }
+
+    //Interacting with Doors
+    private void OnTriggerStay(Collider other)
+    {
+        if (!other.TryGetComponent<TeleportScript>(out var teleportScript)) return;
+        if (teleportScript != null && teleportScript.GetLevel() == collectedItems && Input.GetKeyDown(KeyCode.E))
+        {
+            _thirdPersonController.enabled = false;
+            _thirdPersonController.transform.parent.position = teleportScript.GetTeleportPoint().position;
+            _thirdPersonController.enabled = true;
         }
     }
 
