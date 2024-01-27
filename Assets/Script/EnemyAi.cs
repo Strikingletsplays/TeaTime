@@ -22,6 +22,7 @@ public class EnemyAi : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        Debug.Log("YO WTF");
     }
 
     private void Update()
