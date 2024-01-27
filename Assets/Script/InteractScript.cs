@@ -15,6 +15,11 @@ public class InteractScript : MonoBehaviour
         _thirdPersonController = GetComponent<CharacterController>();
     }
 
+    public bool CheckIfAllCollected()
+    {
+        return objectsToCollect == collectedItems;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         other.TryGetComponent<ItemToCollect>(out var ItemToCollect);
