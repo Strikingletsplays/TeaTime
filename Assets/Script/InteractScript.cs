@@ -8,6 +8,7 @@ public class InteractScript : MonoBehaviour
     private int objectsToCollect = 4;
     public int collectedItems = 0;
     private CharacterController _thirdPersonController;
+    [SerializeField] private UIManager _uiManager;
 
     private void Start()
     {
@@ -54,8 +55,9 @@ public class InteractScript : MonoBehaviour
         if (teleportScript != null && teleportScript.GetLevel() == collectedItems && Input.GetKeyDown(KeyCode.E))
         {
             _thirdPersonController.enabled = false;
-            _thirdPersonController.transform.parent.position = teleportScript.GetTeleportPoint().position;
+            _thirdPersonController.transform.position = teleportScript.GetTeleportPoint().position;
             _thirdPersonController.enabled = true;
+            _uiManager.DisablePressEText();
         }
     }
 
