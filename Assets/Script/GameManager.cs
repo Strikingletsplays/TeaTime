@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform Level3RespawnPoint;
     [SerializeField] private Transform Level4RespawnPoint;
 
+    [SerializeField] private NarratorsVoiceLinesSO _narratorsVoiceLinesSo;
+    
+    
     public Transform GetLeve1RP()
     {
         return Level1RespawnPoint;
@@ -27,4 +30,6 @@ public class GameManager : MonoBehaviour
     {
         return Level4RespawnPoint;
     }
+    
+    
 }
