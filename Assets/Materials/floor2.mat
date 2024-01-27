@@ -147,7 +147,7 @@ Material:
     m_Ints: []
     m_Floats:
     - Vector1_3bfb11a3aac04e8fa66e9ec4a4644a9f: 1
-    - Vector1_a93d724889564f918aaae8b7aaea00d8: 1
+    - Vector1_a93d724889564f918aaae8b7aaea00d8: 2
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
