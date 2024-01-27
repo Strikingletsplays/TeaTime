@@ -32,15 +32,14 @@ public class EnemyAi : MonoBehaviour
         //Not
         if (!playerInSightRange) Patroling();
 
-        if (playerInSightRange) Patroling();
+        if (playerInSightRange) ChasePlayer();
     }
 
     private void Patroling()
     {
         if (!walkPointSet) SearchWalkPoint();
 
-        if (walkPointSet)
-            agent.SetDestination(walkPoint);
+        if (walkPointSet) agent.SetDestination(walkPoint);
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
@@ -64,7 +63,9 @@ public class EnemyAi : MonoBehaviour
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
-        transform.LookAt(player);
+        //transform.LookAt(player);
+        Debug.Log("Chasing You");
+        Debug.Log(player.position);
     }
 
 }
