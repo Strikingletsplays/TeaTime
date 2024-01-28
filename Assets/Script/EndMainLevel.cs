@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class EndMainLevel : MonoBehaviour
 {
     [SerializeField] private InteractScript _interactScript;
+    [SerializeField] private GameManager _gameManager;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,7 +20,7 @@ public class EndMainLevel : MonoBehaviour
 
     IEnumerator EndCoroutine()
     {
-        yield return new WaitForSeconds(9);
+        yield return new WaitUntil(_gameManager.AudioSourceIsPlaying);
         //Jump Scare
         yield return new WaitForSeconds(1);
         //Disable jump scare
