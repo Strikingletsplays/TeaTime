@@ -2644,7 +2644,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 1
   _naratorVoiceLine: 1
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &64058785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8050,8 +8049,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -128.45, y: 1.17, z: -43.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1665090235}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8091,7 +8090,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 15
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &196425147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8586,8 +8584,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -54.6, y: 1.17, z: -75.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1144357224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8627,7 +8625,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 13
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &205635787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10071,7 +10068,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.14, y: 1.17, z: -5.38}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.37, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 844244580}
@@ -10112,7 +10109,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 10
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &232892449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16313,6 +16309,134 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1914181441514398173, guid: 844ad543895479d4e959d693a2d83406, type: 3}
   m_PrefabInstance: {fileID: 355696800}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &357310942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 357310944}
+  - component: {fileID: 357310943}
+  m_Layer: 0
+  m_Name: SecondAudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &357310943
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357310942}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &357310944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357310942}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &360447762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21578,7 +21702,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 1
   _naratorVoiceLine: 0
-  _audioSource: {fileID: 988284418}
 --- !u!1 &470870808
 GameObject:
   m_ObjectHideFlags: 0
@@ -23340,8 +23463,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -41.88, y: 1.17, z: -1.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 890256448}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23360,7 +23483,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 8
-  _audioSource: {fileID: 988284418}
 --- !u!65 &513836491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36052,8 +36174,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -95.63, y: 1.17, z: -34.47}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1633445352}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36093,7 +36215,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 14
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &829944457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36861,8 +36982,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -287.38, y: 1.17, z: -1.03}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1982602738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36902,7 +37023,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 19
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &850619627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43543,6 +43663,7 @@ MonoBehaviour:
   Level2RespawnPoint: {fileID: 1586859889}
   Level3RespawnPoint: {fileID: 470870809}
   Level4RespawnPoint: {fileID: 1811222380}
+  _audioSource: {fileID: 988284418}
 --- !u!4 &988284417
 Transform:
   m_ObjectHideFlags: 0
@@ -51250,8 +51371,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -209.69, y: 1.17, z: -4.87}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 215671422}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -51291,7 +51412,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 17
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &1175690651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53719,8 +53839,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -36.33, y: 1.17, z: -34.52}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 195147333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -53760,7 +53880,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 11
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &1224827449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57847,7 +57966,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 1
   _naratorVoiceLine: 6
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &1303460696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67994,8 +68112,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -40.69, y: 1.17, z: -34.52}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1676922064}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -68035,7 +68153,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 12
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &1580773549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69175,8 +69292,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -195.7, y: 1.17, z: -4.87}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 215671422}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -69216,7 +69333,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 17
-  _audioSource: {fileID: 988284418}
 --- !u!1 &1600501847
 GameObject:
   m_ObjectHideFlags: 0
@@ -70447,7 +70563,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 1
   _naratorVoiceLine: 2
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &1626762224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77094,7 +77209,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -31.87, y: 1.17, z: -11.18}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.37, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 844244580}
@@ -77135,7 +77250,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 10
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &1738914151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77997,7 +78111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7edf1384f95634abdfed5f754fb3b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactScript: {fileID: 0}
+  _interactScript: {fileID: 1792807821}
+  _gameManager: {fileID: 988284416}
 --- !u!65 &1763569866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79313,8 +79428,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -136.9, y: 1.17, z: -4.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1352665591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -79354,7 +79469,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 16
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &1791122603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80335,8 +80449,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -131, y: 1.17, z: -7.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1352665591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -80376,7 +80490,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 16
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &1813273713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82550,8 +82663,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -36.06, y: 1.17, z: -6.02}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 673171179}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -82591,7 +82704,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 9
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &1858695038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85366,8 +85478,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -27.44, y: 1.17, z: -1.61}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 673171179}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -85407,7 +85519,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 9
-  _audioSource: {fileID: 988284418}
 --- !u!1 &1926504500
 GameObject:
   m_ObjectHideFlags: 0
@@ -85436,8 +85547,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -285.27, y: 1.17, z: -4.87}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1427552143}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -85477,7 +85588,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 18
-  _audioSource: {fileID: 988284418}
 --- !u!1 &1930272411
 GameObject:
   m_ObjectHideFlags: 0
@@ -87973,7 +88083,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -41.11, y: 1.17, z: -20}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.37, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 844244580}
@@ -88014,7 +88124,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 10
-  _audioSource: {fileID: 988284418}
 --- !u!1 &1978700824
 GameObject:
   m_ObjectHideFlags: 0
@@ -93764,8 +93873,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -293.1, y: 1.17, z: -4.87}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.37, y: 2.37, z: 2.37}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1427552143}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -93805,7 +93914,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 0
   _naratorVoiceLine: 18
-  _audioSource: {fileID: 988284418}
 --- !u!1001 &2096942628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95611,7 +95719,6 @@ MonoBehaviour:
   _narratorsVoiceLinesSo: {fileID: 11400000, guid: ad2c01cb9573c7e46aca16a415daaa49, type: 2}
   _naratorVoiceType: 1
   _naratorVoiceLine: 6
-  _audioSource: {fileID: 988284418}
 --- !u!1 &2137951041
 GameObject:
   m_ObjectHideFlags: 0
@@ -96040,6 +96147,7 @@ SceneRoots:
   - {fileID: 1677148627}
   - {fileID: 988284417}
   - {fileID: 1013259584}
+  - {fileID: 357310944}
   - {fileID: 2108876489}
   - {fileID: 1868914143}
   - {fileID: 1406149007}
