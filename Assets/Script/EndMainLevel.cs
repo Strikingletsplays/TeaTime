@@ -23,7 +23,7 @@ public class EndMainLevel : MonoBehaviour
         yield return new WaitUntil(_gameManager.AudioSourceIsPlaying);
         //Jump Scare
         _scaryCanvas.SetActive(true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(4);
         //Disable jump scare
         SceneManager.LoadScene(2);
     }
