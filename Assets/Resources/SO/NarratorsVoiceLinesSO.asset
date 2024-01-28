@@ -34,9 +34,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 132b8af2e1b06094cb2b886593a9480a, type: 3}
   - {fileID: 8300000, guid: 371bb70d51707d241ae98857ee1a390d, type: 3}
   - {fileID: 8300000, guid: 4e3f82a9257998c479640faecb304c64, type: 3}
-  - {fileID: 8300000, guid: c89da7830b2fda147bd8fdff816d98d1, type: 3}
-  - {fileID: 8300000, guid: 406c19583f5eeeb4f88835f242aee41b, type: 3}
-  - {fileID: 8300000, guid: 9f2c01555aa3b2543a333588114cc401, type: 3}
+  - {fileID: 8300000, guid: e6afb49c754443448a3fbcc8a6cfff44, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   _extraVoicelines:
   - {fileID: 8300000, guid: 180d8f254f32c254184510fbdf111cb5, type: 3}
   - {fileID: 8300000, guid: 8c6464e8f61251445804ba93e7a71a96, type: 3}
