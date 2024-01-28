@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: NarratorsVoiceLinesSO
   m_EditorClassIdentifier: 
   _mainStoryVoicelines:
-  - {fileID: 8300000, guid: 8a49206b1bef9bf41a5460b3c55144ae, type: 3}
-  - {fileID: 8300000, guid: 0bc3a93acdb54914b8e1870b7d9e9d51, type: 3}
-  - {fileID: 8300000, guid: cf3df939ea175c94fbaf42fae1a3c5d5, type: 3}
+  - {fileID: 8300000, guid: e43d2007c38729d4a99737b28ff78231, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 8300000, guid: 6f34e829d83655044a81dcf10158b85c, type: 3}
   - {fileID: 8300000, guid: 6796ab8c5ce31f44bbf7ea91a5a0ffba, type: 3}
   - {fileID: 8300000, guid: 48c31391fa3b13f48b952fea70859574, type: 3}

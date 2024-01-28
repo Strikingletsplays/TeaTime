@@ -1,7 +1,10 @@
 using System;
+using System.Collections;
+using Cinemachine;
 using StarterAssets;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InteractScript : MonoBehaviour
 {
@@ -9,6 +12,8 @@ public class InteractScript : MonoBehaviour
     public int collectedItems = 0;
     private CharacterController _thirdPersonController;
     [SerializeField] private UIManager _uiManager;
+    bool zoom = true;
+
 
     private void Start()
     {
@@ -53,9 +58,32 @@ public class InteractScript : MonoBehaviour
         }
     }
 
+    IEnumerator disableZoom()
+    {
+        yield return new WaitForSeconds(2);
+        zoom = false;
+        SceneManager.LoadScene(1);
+    }
+
+    IEnumerator DrinkTeaF()
+    {
+        bool zoom = true;
+        yield return new WaitForSeconds(1);
+        while (zoom)
+        {
+            yield return null;
+            FindObjectOfType<CinemachineVirtualCamera>().m_Lens.FieldOfView -= 50 * Time.deltaTime;
+        }
+    }
+
     //Interacting with Doors
     private void OnTriggerStay(Collider other)
     {
+        if (other.TryGetComponent<DrinkTea>(out var DrinkTea) && Input.GetKeyDown(KeyCode.E))
+        {
+            StartCoroutine(DrinkTeaF());
+            StartCoroutine(disableZoom());
+        }
         if (!other.TryGetComponent<TeleportScript>(out var teleportScript)) return;
         if (teleportScript != null && teleportScript.GetLevel() == collectedItems && Input.GetKeyDown(KeyCode.E))
         {
