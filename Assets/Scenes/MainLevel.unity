@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: a4be220830e90ea4eb88b48b7fd376ce, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.17316318, g: 0.16457182, b: 0.29665613, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16156,7 +16156,7 @@ MonoBehaviour:
     m_Bits: 64
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 4
-  sightRange: 4
+  sightRange: 8
   playerInSightRange: 0
 --- !u!195 &347674424
 NavMeshAgent:
@@ -16199,7 +16199,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.2870576
+  m_Radius: 0.63
   m_Height: 3.3933465
   m_Direction: 1
   m_Center: {x: 0, y: 0.08762408, z: 0.05403563}
@@ -22701,7 +22701,7 @@ MonoBehaviour:
     m_Bits: 64
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 4
-  sightRange: 6
+  sightRange: 10
   playerInSightRange: 0
 --- !u!195 &495930149
 NavMeshAgent:
@@ -22744,10 +22744,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.2260311
-  m_Height: 4.3171854
+  m_Radius: 0.63
+  m_Height: 3.3933465
   m_Direction: 1
-  m_Center: {x: 0.0056957738, y: 0.4999401, z: -0.013577379}
+  m_Center: {x: 0, y: 0.08762408, z: 0.05403563}
 --- !u!1001 &496256732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65092,7 +65092,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486159259}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
@@ -79957,7 +79957,7 @@ MonoBehaviour:
     m_Bits: 64
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 4
-  sightRange: 4
+  sightRange: 8
   playerInSightRange: 0
 --- !u!195 &1773598631
 NavMeshAgent:
@@ -80000,10 +80000,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.1704133
-  m_Height: 3.2188566
+  m_Radius: 0.63
+  m_Height: 3.3933465
   m_Direction: 1
-  m_Center: {x: 0.0036623194, y: -0.040059082, z: -0.075652905}
+  m_Center: {x: 0, y: 0.08762408, z: 0.05403563}
 --- !u!1001 &1774688510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93026,7 +93026,7 @@ MonoBehaviour:
     m_Bits: 64
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 4
-  sightRange: 6
+  sightRange: 10
   playerInSightRange: 0
 --- !u!195 &2044584402
 NavMeshAgent:
@@ -93069,10 +93069,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.2260311
-  m_Height: 4.3171854
+  m_Radius: 0.63
+  m_Height: 3.3933465
   m_Direction: 1
-  m_Center: {x: 0.0056957738, y: 0.4999401, z: -0.013577379}
+  m_Center: {x: 0, y: 0.08762408, z: 0.05403563}
 --- !u!1001 &2045198148
 PrefabInstance:
   m_ObjectHideFlags: 0
