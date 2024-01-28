@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_6476defd4a784db180cc26424e483627:
-        m_Texture: {fileID: 2800000, guid: 943509b12afbf524a9ba17ab564d3cc8, type: 3}
+        m_Texture: {fileID: 2800000, guid: b8784d2ba6869f34d997c0f7685878fe, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_8af013da5ee147c0865590860d3acc55:
